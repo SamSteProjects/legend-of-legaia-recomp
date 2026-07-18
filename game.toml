@@ -1,0 +1,20 @@
+# Legend of Legaia (USA) - local user-supplied game configuration
+
+[game]
+name = "Legend of Legaia"
+id = "SCUS-94254"
+exe = "disc/SCUS_942.54"
+disc = "game/Legend of Legaia (USA).cue"
+load_address = "0x80010000"
+entry_pc = "0x80026C28"
+text_size = "0x6B800"
+stack_base = "0x801FFFF0"
+
+[runtime]
+window_title = "Legend of Legaia Recompiled"
+controller = "digital"
+memcard_dir = "saves"
+overlay_cache = false
+
+[video]
+renderer = "software"

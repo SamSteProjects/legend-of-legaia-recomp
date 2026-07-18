@@ -1,0 +1,19 @@
+# User-supplied copyrighted game / BIOS data
+disc/SCUS_942.54
+game/*.cue
+game/*.bin
+bios/*.BIN
+bios/*.bin
+
+# User data and crash diagnostics
+saves/
+card*.mcd
+input.ini
+keybinds.ini
+psx_*.json
+psx_*.txt
+psx_*.wav
+*.log
+
+# Locally assembled release artifacts
+dist/
