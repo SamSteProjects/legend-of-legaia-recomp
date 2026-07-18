@@ -34,7 +34,8 @@ The game creates virtual memory cards in `saves\\`. Back up that folder before t
 
 ## Debug tools
 
-`F10` opens the external runtime overlay. In its `WARP` panel:
+Press `F10` to open the external runtime overlay, then press `Tab` until the
+`WARP` panel is shown. From there:
 
 - `Enter` opens Legaia's compact retail developer menu (field/town only).
 - `F` launches Fishing through the same retail transition used by a fishing pond, and returns to the prior field or town on exit.
