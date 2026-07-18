@@ -51,6 +51,6 @@ Do not upload game images, BIOS files, or copyrighted extracted game assets.
 
 - [mstan/psxrecomp](https://github.com/mstan/psxrecomp) and its contributors
 - [SamSteProjects/psxrecomp](https://github.com/SamSteProjects/psxrecomp), the Legaia runtime fork
-- [AndrewAltimit/legend-of-legaia-re](https://github.com/AndrewAltimit/legend-of-legaia-re) for reverse-engineering documentation that guided the overlay work
+- **Andrew Altimit / [legend-of-legaia-re](https://github.com/AndrewAltimit/legend-of-legaia-re)** for the detailed reverse-engineering documentation that mapped Legaia's streamed overlays, their load behavior, and their game systems. That work directly guided the overlay identification, validation, and cache-correctness fixes used by this playtest build.
 
 Legend of Legaia and all associated game assets are property of their respective rights holders. This project is not affiliated with Sony or the original developers/publishers.
