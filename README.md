@@ -34,13 +34,16 @@ The game creates virtual memory cards in `saves\\`. Back up that folder before t
 
 ## Debug tools
 
-Press `F10` to open the external runtime overlay, then press `Tab` until the
-`WARP` panel is shown. From there:
+Press `F10` to toggle the external runtime overlay, then press `Tab` until the
+`WARP` panel is shown. Press `Enter` there to activate Legaia's in-game
+**DEBUG MODE**; its full-screen black developer screen will appear.
 
-- `Enter` opens Legaia's compact retail developer menu (field/town only).
-- `F` launches Fishing through the same retail transition used by a fishing pond, and returns to the prior field or town on exit.
-
-The retail developer menu can also be opened with **Select + Y** on an Xbox controller while in a normal field/town state.
+After DEBUG MODE has been activated, the more convenient compact field
+cheat/developer menu can be opened in a normal field/town state with
+**Select + Triangle** (Xbox **Select + Y**). Press `F10` again at any time to
+toggle the external runtime overlay back on. From its `WARP` panel, `F` also
+launches Fishing through the same retail transition used by a fishing pond and
+returns to the prior field or town on exit.
 
 ## Reporting a problem
 
