@@ -1,5 +1,6 @@
 @echo off
 setlocal
+cd /d "%~dp0"
 
 if not exist "disc\SCUS_942.54" (
   echo Missing disc\SCUS_942.54. See README.md for setup.
@@ -17,4 +18,9 @@ if not exist "bios\SCPH1001.BIN" (
   exit /b 1
 )
 
-LegaiaRecomp.exe --game game.toml
+"%~dp0LegaiaRecomp.exe" --game "%~dp0game.toml"
+if errorlevel 1 (
+  echo.
+  echo LegaiaRecomp exited with an error. See psx_crash.txt or psx_last_run_report.json if present.
+  pause
+)

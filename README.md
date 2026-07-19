@@ -28,7 +28,8 @@ This project cannot provide any Sony or game data. You must supply your own lega
 2. Place the extracted `SCUS_942.54` at `disc\\SCUS_942.54`.
 3. Put the matching `.cue` and `.bin` in `game\\`. The cue file must be named `Legend of Legaia (USA).cue` or update `game.toml` to match it.
 4. Put your BIOS at `bios\\SCPH1001.BIN`.
-5. Run `Run LegaiaRecomp.bat`.
+5. Run `Run LegaiaRecomp.bat`. You can also double-click `LegaiaRecomp.exe`;
+   the release build loads its bundled `game.toml` automatically.
 
 The game creates virtual memory cards in `saves\\`. Back up that folder before trying experimental builds.
 
