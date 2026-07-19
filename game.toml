@@ -10,6 +10,15 @@ entry_pc = "0x80026C28"
 text_size = "0x6B800"
 stack_base = "0x801FFFF0"
 
+[recompiler]
+# The runtime config loader requires this block even though this release has
+# already been recompiled.  These values are metadata only at play time.
+seeds = "seeds/initial.txt"
+strict = true
+discovery = "whole-image"
+out_dir = "generated"
+out_stem = "SCUS_94254"
+
 [runtime]
 window_title = "Legend of Legaia Recompiled"
 controller = "digital"
