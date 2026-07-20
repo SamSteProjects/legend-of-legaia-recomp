@@ -32,6 +32,13 @@ if not exist "%BIOS_FILE%" (
 
 rem Explicit asset paths prevent an old launcher selection from overriding this
 rem release folder's game.toml paths on a later run.
+rem Legaia's libcd callback polls the CD response registers directly.  Keep
+rem the response hidden until its normal IRQ presentation delay has elapsed;
+rem otherwise battle XA audio can run ahead of the animation.  Do not raise
+rem XA sector cadence here: PSX_XA_ACTION_SPEED=2 is diagnostic-only and can
+rem drop later Hyper Art audio.
+set "PSX_CD_RESPONSE_VISIBILITY_DELAY=1"
+set "PSX_XA_ACTION_SPEED=1"
 "%~dp0LegaiaRecomp.exe" --game "%~dp0game.toml" --bios "%~dp0%BIOS_FILE%" --disc "%~dp0%GAME_BIN%"
 if errorlevel 1 (
   echo.
